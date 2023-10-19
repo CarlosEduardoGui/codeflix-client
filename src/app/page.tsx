@@ -6,7 +6,7 @@ export default function Home() {
     <div className='relative h-screen overflow-hidden bg-gradient-to-b lg:h-[140vh]'>
       <Header />
       <main className='relative pb-24 pl-4 lg:pl-16'>
-        <div className='flex flex-col space-y-2 py-16 md-space-y-4 lg:h-[65vh] lg:justify-and lh:pb-12'>
+        <div className='flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12'>
           <div className='absolute left-0 top-0 -z-10 flex h-[95vh] w-screen flex-col bg-black '>
             <Image
               src='/banner.png'
@@ -21,8 +21,8 @@ export default function Home() {
           </h1>
 
           <p className='text-shadow-md max-w-xs text-xs md:max-w-lg md:text-lg lg:max-w-2xl'>
-          After fleeing an abusive relationship, a young mother finds a job cleaning houses as she fights to provide for her child 
-          and build them a better future.
+            After fleeing an abusive relationship, a young mother finds a job cleaning houses as she fights to provide for her child
+            and build them a better future.
           </p>
         </div>
         <div className='flex space-x-3'>
