@@ -16,7 +16,6 @@ export const Banner = ({ movie }: { movie: Movie }) => (
           poster={movie.bannerFileURL}
           src={movie.videoFileURL}
         />
-
         <Image
           src={movie.bannerFileURL}
           alt={movie.title}
@@ -24,24 +23,20 @@ export const Banner = ({ movie }: { movie: Movie }) => (
           className='object-cover object-top opacity-30 filter lg:hidden'
         />
       </div>
-      <h1 className='text-2xl font-bold md:text-4xl lg:text-7xl'>
-        {movie.title}
-      </h1>
-      <p className='text-shadow-md max-w-xs text-xs md:max-w-lg md:text-lg lg:max-w-2xl'>
+      <h1 className='text-4xl font-bold lg:text-7xl'>{movie.title}</h1>
+      <p className='text-shadow-md text-sm text-gray-300 md:max-w-lg md:text-lg lg:max-w-2xl'>
         {movie.description}
       </p>
     </div>
-    <div className='flex space-y-3'></div>
     <div className='flex space-x-3'>
       <Link
         href={`/watch/${movie.id}`}
+        className='flex cursor-pointer items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5'
       >
-        <button className='md:text-xl; flex cursor-pointer items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5'>
-          <PlayIcon className='h-6' />
-          Play
-        </button>
+        <PlayIcon className='h-6' />
+        Watch Now
       </Link>
-      <button className='md:text-xl; flex cursor-pointer items-center gap-x-2 rounded bg-gray-600 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5'>
+      <button className='flex cursor-pointer items-center gap-x-2 rounded bg-gray-500 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5'>
         <InformationCircleIcon className='h-6' />
         More Info
       </button>
