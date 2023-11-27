@@ -5,7 +5,7 @@ export const getMovieBbyId = async (id: string): Promise<Movie> => {
     return apiRequest(`movies/${encodeURIComponent(id)}`);
 }
 
-export const getFeatureMovie = async (id: string): Promise<Movies> => {
+export const getFeatureMovie = async (id: string): Promise<Movie> => {
     return apiRequest(`featured/${id}`);
 }
 
