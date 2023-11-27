@@ -23,7 +23,9 @@ export const getMoviesByGenre = async (
 export const searchMovies = async (
     title: string = '',
     genre: string = '',
-    options?: RequestOptions
+    options: RequestOptions = {
+        _limit: 100
+    }
 ): Promise<Movies> => {
     return apiRequest(
         `movies`,
