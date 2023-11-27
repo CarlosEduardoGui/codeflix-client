@@ -9,7 +9,7 @@ export type Movie = {
     thumbFileURL: string;
     bannerFileURL: string;
     videoFileURL: string;
-    roting: string;
+    rating: string;
 }
 
 export type Movies = Movie[];

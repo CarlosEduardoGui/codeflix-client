@@ -1,6 +1,7 @@
 import { Movie } from '../types/movie';
 import Link from 'next/link';
 import { ChevronDownIcon, PlayIcon, PlusIcon, SpeakerWaveIcon, UserGroupIcon } from '@heroicons/react/20/solid';
+import { MovieRating } from './MovieRating';
 
 export const MovieInfo = ({ movie }: { movie: Movie; }) => (
   <div className='absolute z-10 w-full rounded-b-md bg-zinc-800 p-2 shadow-md transition lg:p-4'>
@@ -29,7 +30,7 @@ export const MovieInfo = ({ movie }: { movie: Movie; }) => (
         <SpeakerWaveIcon className='w-4' /> Double Atmos 5.1 4K
       </div>
       <div className='flex flex-row items-center gap-2'>
-        <UserGroupIcon className='w-4' />
+        <UserGroupIcon className='w-4' /> <MovieRating rating={movie.rating} />
       </div>
       <div className='mt-4 flex flex-row items-center gap-2 text-[8px] text-white lg:text-sm'>
         <p>{movie.genres.join(' .  ')}</p>
