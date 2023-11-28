@@ -12,7 +12,7 @@ export const MovieCard = ({ movie }: { movie: Movie; }) => (
       className='rounded-md object-top transition'
     />
 
-    <div className='invisible absolute top-0 z-10 w-full min-w-[20vw] scale-0 opacity-0 transition delay-300 duration-200 group-hover:-translate-y-[6vw] group-hover:scale-110 group-hover:opacity-100 sm:visible'>
+    <div className='absolute top-0 z-10 w-full min-w-[20vw] scale-0 opacity-0 transition delay-300 duration-200 group-hover:-translate-y-[6vw] group-hover:scale-110 group-hover:opacity-100 sm:visible'>
       <Image
         alt={movie.title}
         src={movie.bannerFileURL}
