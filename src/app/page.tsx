@@ -4,8 +4,10 @@ import { Banner } from './components/Banner';
 import { getFeatureMovie, getMoviesByGenre } from './services/MovieService';
 
 export default async function Home() {
-  const featuredMovie = await getFeatureMovie('106');
+  const randomNumber = Math.floor(Math.random() * (106 - 101) + 1) + 101;
+  const featuredMovie = await getFeatureMovie(`${randomNumber.toString()}`);
   const genres = ['Drama', 'Action', 'Comedy', 'Animation'];
+
   const movies = await Promise.all(
     genres.map(async (genre) => {
       const movies = await getMoviesByGenre(genre, { _limit: 8 });

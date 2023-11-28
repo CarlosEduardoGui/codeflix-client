@@ -34,7 +34,7 @@ export async function apiRequest(
     try {
         const response = await fetch(`${API_URL}/${endpoint}${queryString}`);
         if (!response.ok) {
-            throw new Error(`API requesr falied: ${response.statusText}`)
+            throw new Error(`API request falied: ${response.statusText}`)
         }
 
         return response.json();
