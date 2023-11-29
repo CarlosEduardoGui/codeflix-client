@@ -969,7 +969,7 @@
     "@typescript-eslint/types" "5.60.0"
     eslint-visitor-keys "^3.3.0"
 
-"@vidstack/react@^1.6.2":
+"@vidstack/react@^1.5.1":
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/@vidstack/react/-/react-1.6.2.tgz#dda9e07ce71a3cef87b733a97be55983319c575c"
   integrity sha512-Uz62XOuDfNesnRGwptBMCs2dpYkob53i32PeesE62fkIiFU5pJu4Zx03Wm43wWgR1/1BKikuHQaQlU8MMZLfIQ==
@@ -4747,8 +4747,3 @@ zod@3.21.4:
   version "3.21.4"
   resolved "https://registry.npmjs.org/zod/-/zod-3.21.4.tgz"
   integrity sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==
-
-zod@^3.22.4:
-  version "3.22.4"
-  resolved "https://registry.npmjs.org/zod/-/zod-3.22.4.tgz"
-  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
