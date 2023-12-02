@@ -1,4 +1,4 @@
-import { Movies } from '../types/movie';
+import { Movies } from '../types/Movie';
 import { MovieCard } from './MovieCard';
 
 type MoviewRowProps = {

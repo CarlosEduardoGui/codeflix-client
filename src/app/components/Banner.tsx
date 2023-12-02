@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { InformationCircleIcon } from '@heroicons/react/24/outline';
 import { PlayIcon } from '@heroicons/react/24/solid';
-import { Movie } from '../types/movie';
+import { Movie } from '../types/Movie';
 import Link from 'next/link';
 
 export const Banner = ({ movie }: { movie: Movie }) => (

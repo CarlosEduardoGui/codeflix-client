@@ -1,4 +1,4 @@
-import { Movie } from '../types/movie';
+import { Movie } from '../types/Movie';
 import Link from 'next/link';
 import { ChevronDownIcon, PlayIcon, PlusIcon, SpeakerWaveIcon, UserGroupIcon } from '@heroicons/react/20/solid';
 import { MovieRating } from './MovieRating';

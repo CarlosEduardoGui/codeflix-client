@@ -1,4 +1,4 @@
-import { Movie, Movies } from '../types/movie';
+import { Movie, Movies } from '../types/Movie';
 import { RequestOptions, apiRequest } from './ApiRequest'
 
 export const getMovieBbyId = async (id: string): Promise<Movie> => {
